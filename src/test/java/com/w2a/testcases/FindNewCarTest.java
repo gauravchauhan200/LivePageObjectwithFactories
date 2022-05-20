@@ -21,7 +21,6 @@ public class FindNewCarTest
 	{
 
 		WebDriver driver;
-	//	System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+"\\src\\test\\resources\\executables\\chromedriver.exe");
 		WebDriverManager.chromedriver().setup();
 		
 		Map<String, Object> prefs = new HashMap<String, Object>();
