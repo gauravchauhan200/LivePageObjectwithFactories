@@ -1,4 +1,5 @@
 package com.w2a.pages;
+
 import java.util.List;
 
 import org.openqa.selenium.By;
@@ -6,17 +7,17 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
 
 
-import com.w2a.base.BasePage;
-
-public class HomePage extends BasePage
+public class HomePage
 {
 	WebDriver driver;
 
 	public HomePage(WebDriver driver)
 	{
-		super(driver);
+		this.driver=driver;
+		PageFactory.initElements(driver,this);
 	}
 
 	
@@ -33,12 +34,13 @@ public class HomePage extends BasePage
 	public WebElement pressSearch;
 	
 	
-	public void findNewCar() throws Exception 
+	public NewCarPage findNewCar() throws InterruptedException  
 	{
+
+	
 		Actions action=new Actions(driver);
 		action.moveToElement(newCarsMenu).perform();
-		
-		//List<WebElement> newCarOptions = driver.findElements(By.xpath("//ul[@class='o-cpnuEd o-XylGE JP2Cxm']/a/div/div"));
+	
 			for(WebElement option:newCarOptions)
 			{
 				if(option.getText().equalsIgnoreCase("Find New Cars"))
@@ -47,7 +49,9 @@ public class HomePage extends BasePage
 					break;
 				}
 			}
-			Thread.sleep(3000);
+			
+	Thread.sleep(3000);
+	return new NewCarPage(driver);
 	}
 
 	

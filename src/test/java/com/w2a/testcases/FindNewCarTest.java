@@ -4,14 +4,10 @@ package com.w2a.testcases;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.concurrent.TimeUnit;
-
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
-
 import com.w2a.pages.HomePage;
-import com.w2a.pages.NewCarPage;
-
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class FindNewCarTest
@@ -31,13 +27,15 @@ public class FindNewCarTest
 
 		
 		
-	//	HomePage home = PageFactory.initElements(driver, HomePage.class);  else use it in construcor once		
-		HomePage home = new HomePage(driver);		
-		home.findNewCar();
+/*	//	HomePage home = PageFactory.initElements(driver, HomePage.class);  else use it in construcor once
 		
-		NewCarPage carpage = new NewCarPage(driver);
+		HomePage home = new HomePage(driver);		
+		NewCarPage carpage = home.findNewCar();
 		carpage.gotoMercedesBenz();
+*/	
+	//	All can be written in one single line
 	
+		new HomePage(driver).findNewCar().gotoBMW();
 		
 			
 		Thread.sleep(3000);
