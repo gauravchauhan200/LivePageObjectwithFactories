@@ -1,18 +1,17 @@
 package com.w2a.utilities;
 
 import java.lang.reflect.Method;
-
 import org.testng.annotations.DataProvider;
-
 import com.w2a.base.BaseTest;
 
 
 
-public class DataUtil extends BaseTest{
-	
-	
+public class DataUtil extends BaseTest
+{
+		
 	@DataProvider(name="dp1")
-	public Object[][] getData(Method m) {
+	public Object[][] getData(Method m) 
+	{
 	
 		String sheetName = m.getName();
 		

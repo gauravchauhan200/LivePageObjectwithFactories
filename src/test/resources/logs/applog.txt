@@ -1,6 +1,6 @@
-INFO    2022-05-23 23:17:23,735 [main] com.w2a.base.BaseTest  - Config properties loaded !!!
-INFO    2022-05-23 23:17:23,739 [main] com.w2a.base.BaseTest  - OR properties loaded !!!
-INFO    2022-05-23 23:17:34,979 [main] com.w2a.base.BaseTest  - Launching Chrome !!!
-INFO    2022-05-23 23:17:48,462 [main] com.w2a.base.BaseTest  - Navigated to : https://www.carwale.com/
-INFO    2022-05-23 23:17:54,596 [main] com.w2a.base.BaseTest  - DB Connection established !!!
-INFO    2022-05-23 23:18:12,460 [main] com.w2a.base.BaseTest  - Test Execution completed !!!
+INFO    2022-05-24 01:04:26,860 [main] com.w2a.base.BaseTest  - Config properties loaded !!!
+INFO    2022-05-24 01:04:26,862 [main] com.w2a.base.BaseTest  - OR properties loaded !!!
+INFO    2022-05-24 01:04:30,711 [main] com.w2a.base.BaseTest  - Launching Chrome !!!
+INFO    2022-05-24 01:04:35,693 [main] com.w2a.base.BaseTest  - Navigated to : https://www.carwale.com/
+INFO    2022-05-24 01:04:40,652 [main] com.w2a.base.BaseTest  - DB Connection established !!!
+INFO    2022-05-24 01:04:47,739 [main] com.w2a.base.BaseTest  - Test Execution completed !!!

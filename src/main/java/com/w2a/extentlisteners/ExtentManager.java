@@ -16,18 +16,17 @@ import com.w2a.base.BasePage;
 
 
 
-
-public class ExtentManager {
+public class ExtentManager 
+{
 
 	private static ExtentReports extent;
 	public static String fileName;
 	
-	
 
-	    public static ExtentReports createInstance(String fileName) {
+	    public static ExtentReports createInstance(String fileName) 
+	    {
 	        ExtentSparkReporter htmlReporter = new ExtentSparkReporter(fileName);
-	       
-	        
+	           
 	        htmlReporter.config().setTheme(Theme.STANDARD);
 	        htmlReporter.config().setDocumentTitle(fileName);
 	        htmlReporter.config().setEncoding("utf-8");
@@ -38,21 +37,18 @@ public class ExtentManager {
 	        extent.setSystemInfo("Automation Tester", "Rahul Arora");
 	        extent.setSystemInfo("Organization", "Way2Automation");
 	        extent.setSystemInfo("Build no", "W2A-1234");
-	        
-	        
+	         
 	        return extent;
 	    }
 
 	    
-		public static void captureScreenshot() throws IOException {
-			
+		public static void captureScreenshot() throws IOException 
+		{	
 			Date d = new Date();
-			 fileName = d.toString().replace(":", "_").replace(" ", "_")+".jpg";
+			fileName = d.toString().replace(":", "_").replace(" ", "_")+".jpg";
 
-			
-			
-			File screeshot = ((TakesScreenshot)  BasePage.driver).getScreenshotAs(OutputType.FILE);
-			FileUtils.copyFile(screeshot, new File(".//reports//"+fileName));
+			File screeshot = ((TakesScreenshot) BasePage.driver).getScreenshotAs(OutputType.FILE);
+			FileUtils.copyFile(screeshot, new File(".//reports//"+fileName));			
 		}
 		
 		
@@ -62,8 +58,6 @@ public class ExtentManager {
 			Date d = new Date();
 			String fileName = d.toString().replace(":", "_").replace(" ", "_")+".jpg";
 
-			
-			
 			File screeshot = ((TakesScreenshot) element).getScreenshotAs(OutputType.FILE);
 			FileUtils.copyFile(screeshot, new File(".//screenshot//"+"Element_"+fileName));
 		}

@@ -39,7 +39,7 @@ public class BaseTest
 	public void setUp(String browser)
 	{
 		// loading the log file
-		PropertyConfigurator.configure("./src/test/resources/properties/log4j.properties");
+			PropertyConfigurator.configure("./src/test/resources/properties/log4j.properties");
 
 		// loading the OR and Config properties
 		try {
