@@ -1,20 +1,17 @@
 package com.w2a.pages;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.support.PageFactory;
 
+import com.w2a.base.BasePage;
 
-public class NewCarPage 
+public class NewCarPage extends BasePage
 {
-	WebDriver driver;
-	
+
 	public NewCarPage(WebDriver driver) 
 	{
-		this.driver=driver;
-		PageFactory.initElements(driver,this);
+		super(driver);
 	}
-	
-	
+
 	public MarutiSuzukiCarPAge gotoMarutiSuzuki()
 	{
 		driver.findElement(By.xpath("//img[contains(@title,'Maruti Suzuki')]")).click();

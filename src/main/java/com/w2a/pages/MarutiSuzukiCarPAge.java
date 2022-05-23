@@ -6,7 +6,6 @@ import com.w2a.base.BasePage;
 
 public class MarutiSuzukiCarPAge extends BasePage
 {
-	WebDriver driver;
 	public MarutiSuzukiCarPAge(WebDriver driver)
 	{
 		super(driver);

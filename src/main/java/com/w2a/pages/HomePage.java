@@ -1,23 +1,20 @@
 package com.w2a.pages;
-
 import java.util.List;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
-import org.openqa.selenium.support.PageFactory;
 
 
-public class HomePage
+import com.w2a.base.BasePage;
+
+public class HomePage extends BasePage
 {
-	WebDriver driver;
-
+// Because of parameterized constructor we are providing constructor here
 	public HomePage(WebDriver driver)
 	{
-		this.driver=driver;
-		PageFactory.initElements(driver,this);
+	 	super(driver);
 	}
 
 	
@@ -36,8 +33,6 @@ public class HomePage
 	
 	public NewCarPage findNewCar() throws InterruptedException  
 	{
-
-	
 		Actions action=new Actions(driver);
 		action.moveToElement(newCarsMenu).perform();
 	
@@ -49,9 +44,7 @@ public class HomePage
 					break;
 				}
 			}
-			
-	Thread.sleep(3000);
-	return new NewCarPage(driver);
+		return new NewCarPage(driver);
 	}
 
 	

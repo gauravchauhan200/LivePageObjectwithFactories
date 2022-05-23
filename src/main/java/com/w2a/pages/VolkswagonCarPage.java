@@ -6,12 +6,20 @@ import com.w2a.base.BasePage;
 
 public class VolkswagonCarPage extends BasePage 
 {
-	WebDriver driver;
-	
 	public VolkswagonCarPage(WebDriver driver)
 	{
 		super(driver);
 	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	
 	
 }

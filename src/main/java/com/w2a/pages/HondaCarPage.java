@@ -6,8 +6,6 @@ import com.w2a.base.BasePage;
 
 public class HondaCarPage extends BasePage
 {
-	WebDriver driver;
-	
 	public HondaCarPage(WebDriver driver)
 	{
 		super(driver);
