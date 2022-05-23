@@ -4,25 +4,16 @@
 
 
 	<listeners>
-	<listener class-name="extentlisteners.ExtentListeners" />
-		</listeners>
+	<listener class-name="com.w2a.extentlisteners.ExtentListeners" />
+	</listeners>
 
 
   <test name="Find New Car Test">
     <classes>
-      <class name="testcases.FindNewCarTest"/>
+      <class name="com.w2a.testcases.FindNewCarTest"/>
 
     </classes>
   </test> <!-- Test -->
   
   
-  
-  <test name="Car Name and Price Test">
-    <classes>
-      <class name="testcases.CarNameAndPriceTest"/>
-
-    </classes>
-  </test> <!-- Test -->
-  
-    
 </suite> <!-- Suite -->
