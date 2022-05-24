@@ -1,5 +1,7 @@
 package com.w2a.base;
 
+import java.util.List;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -23,6 +25,26 @@ public class CarBase
 	{
 		return carTitle.getText();
 	}
+	
+	
+	
+	@FindBy(xpath="//div/div/div/a/h3")
+	public List <WebElement> carName;
+	
+	@FindBy(xpath="//div[1]/div[1]/div[1]/div[2]/span[1]")
+	public List <WebElement> carPrices;
+	
+	public void getCarNameAndPrices()
+	{
+		for(int i=0;i< carPrices.size();i++)
+		{
+			System.out.println(carName.get(i).getText()+"----car Price is : "+carPrices.get(i).getText());
+		}
+	}
+	
+	
+	
+	
 	
 	
 }

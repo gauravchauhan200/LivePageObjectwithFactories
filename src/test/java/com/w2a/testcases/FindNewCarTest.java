@@ -14,21 +14,71 @@ import com.w2a.utilities.DataUtil;
 public class FindNewCarTest extends BaseTest
 {
 	@Test(dataProviderClass=DataUtil.class,dataProvider="dp1")
-	public void findNewCar(String browserName,String runMode) throws InterruptedException
+	public void findNewCar(String browserName,String carBrand,String carTitle,String runMode) throws InterruptedException
 	{	
 		if(runMode.equals("N"))
 		{
 			throw new SkipException("Skipping the Test as the runmode is set to NO");
 		}
 		
+		
 		setUp(browserName);
 		HomePage home = new HomePage(driver);
 		NewCarPage carPage = home.findNewCar();
-		carPage.gotoHyundai();
-		String carTitle = BasePage.carBase.getCarTitle();
-		System.out.println("Car Title is : "+carTitle);
 		
-		Assert.assertEquals(carTitle, "Hyundai Cars");
+		
+		if(carBrand.equals("Maruti Suzuki"))
+		{
+			carPage.gotoMarutiSuzuki();
+		}
+		else if(carBrand.equals("Hyundai"))
+		{
+			carPage.gotoHyundai();
+		}
+		else if(carBrand.equals("Tata"))
+		{
+			carPage.gotoTata();
+		}
+		else if(carBrand.equals("Mahindra"))
+		{
+			carPage.gotoMahindra();
+		}
+		else if(carBrand.equals("Kia"))
+		{
+			carPage.gotoKia();
+		}
+		else if(carBrand.equals("Toyota"))
+		{
+			carPage.gotoToyota();
+		}
+		else if(carBrand.equals("Mercedes-Benz"))
+		{
+			carPage.gotoMercedesBenz();
+		}
+		else if(carBrand.equals("Honda"))
+		{
+			carPage.gotoHonda();
+		}
+		else if(carBrand.equals("Skoda"))
+		{
+			carPage.gotoSkoda();
+		}
+		else if(carBrand.equals("BMW"))
+		{
+			carPage.gotoBMW();
+		}
+		else if(carBrand.equals("MG"))
+		{
+			carPage.gotToMG();
+		}
+		
+		
+		
+		
+		
+		String title = BasePage.carBase.getCarTitle();
+		System.out.println("Car Title is : "+title);
+		Assert.assertEquals(title, carTitle);
 		
 		
 	}

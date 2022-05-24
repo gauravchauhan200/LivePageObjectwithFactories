@@ -29,6 +29,9 @@ public class NewCarPage extends BasePage
 	@FindBy(xpath="//img[@title='Kia']")
 	public WebElement kia;
 	
+	@FindBy(xpath="//img[@title='Toyota']")
+	public WebElement toyota;
+	
 	@FindBy(xpath="//img[@title='Volkswagen']")
 	public WebElement volkswagen;
 	
@@ -77,6 +80,12 @@ public class NewCarPage extends BasePage
 	{
 		kia.click();
 		return new KiaCarPage(driver);
+	}
+	
+	public ToyotaCarPage gotoToyota()
+	{
+		toyota.click();
+		return new ToyotaCarPage(driver);
 	}
 	
 	public VolkswagonCarPage gotoVolkswagen()
