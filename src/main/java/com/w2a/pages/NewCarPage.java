@@ -1,6 +1,7 @@
 package com.w2a.pages;
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
 
 import com.w2a.base.BasePage;
 
@@ -12,69 +13,106 @@ public class NewCarPage extends BasePage
 		super(driver);
 	}
 
+	
+	@FindBy(xpath="//img[contains(@title,'Maruti Suzuki')]")
+	public WebElement marutiSuzuki;
+	
+	@FindBy(xpath="//div[text()='Hyundai']")
+	public WebElement hyundai;
+	
+	@FindBy(xpath="//img[@title='Tata']")
+	public WebElement tata;
+	
+	@FindBy(xpath="//img[@title='Mahindra']")
+	public WebElement mahindra;
+	
+	@FindBy(xpath="//img[@title='Kia']")
+	public WebElement kia;
+	
+	@FindBy(xpath="//img[@title='Volkswagen']")
+	public WebElement volkswagen;
+	
+	@FindBy(xpath="//div[text()='Mercedes-Benz']")
+	public WebElement mercedesBenz;
+	
+	@FindBy(xpath="//div[text()='Honda']")
+	public WebElement honda;
+	
+	@FindBy(xpath="//div[text()='Skoda']")
+	public WebElement skoda;
+	
+	@FindBy(xpath="//div[text()='BMW']")
+	public WebElement bmw;
+	
+	@FindBy(xpath="//img[@alt='MG']")
+	public WebElement mg;
+	
+	
+	
 	public MarutiSuzukiCarPAge gotoMarutiSuzuki()
 	{
-		driver.findElement(By.xpath("//img[contains(@title,'Maruti Suzuki')]")).click();
+		marutiSuzuki.click();
 		return new MarutiSuzukiCarPAge(driver);
 	}
 	
 	public HyundaiCarPage gotoHyundai()
 	{
-		driver.findElement(By.xpath("//div[text()='Hyundai']")).click();
+		hyundai.click();
 		return new HyundaiCarPage(driver);
 	}
 	
 	public TataCarPAge gotoTata()
 	{
-		driver.findElement(By.xpath("//img[@title='Tata']")).click();
+		tata.click();
 		return new TataCarPAge(driver);
 	}
 
 	public MahindraCarPage gotoMahindra()
 	{
-		driver.findElement(By.xpath("//img[@title='Mahindra']")).click();
+		mahindra.click();
 		return new MahindraCarPage(driver);
 	}
 	
 	public KiaCarPage gotoKia()
 	{
-		driver.findElement(By.xpath("//img[@title='Kia']")).click();
+		kia.click();
 		return new KiaCarPage(driver);
 	}
 	
 	public VolkswagonCarPage gotoVolkswagen()
 	{
-		driver.findElement(By.xpath("//img[@title='Volkswagen']")).click();
+		volkswagen.click();
 		return new VolkswagonCarPage(driver);
 	}
 	
 	public MercedesBenzCarPage gotoMercedesBenz()
 	{
-		driver.findElement(By.xpath("//div[text()='Mercedes-Benz']")).click();
+		mercedesBenz.click();
 		return new MercedesBenzCarPage(driver);
 	}
 	
 	public HondaCarPage gotoHonda()
 	{
-		driver.findElement(By.xpath("//div[text()='Honda']")).click();
+		honda.click();
 		return new HondaCarPage(driver);
 	}
 	
 	public SkodaCarPage gotoSkoda()
 	{
-		driver.findElement(By.xpath("//div[text()='Skoda']")).click();
+		skoda.click();
 		return new SkodaCarPage(driver);
 	}
 	
 	public BMWCarPage gotoBMW()
 	{
-		driver.findElement(By.xpath("//div[text()='BMW']")).click();
+		bmw.click();
 		return new BMWCarPage(driver);
 	}
 	
-	public void gotToMG()
+	public MGCarPage gotToMG()
 	{
-		driver.findElement(By.xpath("//img[@alt='MG']")).click();
+		mg.click();
+		return new MGCarPage(driver); 
 	}
 	
 
