@@ -1,6 +1,17 @@
-INFO    2022-05-24 22:00:22,220 [main] com.w2a.base.BaseTest  - Config properties loaded !!!
-INFO    2022-05-24 22:00:22,221 [main] com.w2a.base.BaseTest  - OR properties loaded !!!
-INFO    2022-05-24 22:00:26,710 [main] com.w2a.base.BaseTest  - Launching Chrome !!!
-INFO    2022-05-24 22:00:46,175 [main] com.w2a.base.BaseTest  - Navigated to : https://www.carwale.com/
-INFO    2022-05-24 22:00:51,418 [main] com.w2a.base.BaseTest  - DB Connection established !!!
-INFO    2022-05-24 22:01:06,622 [main] com.w2a.base.BaseTest  - Test Execution completed !!!
+INFO    2022-05-25 13:28:14,027 [main] com.w2a.base.BaseTest  - Config properties loaded !!!
+INFO    2022-05-25 13:28:14,042 [main] com.w2a.base.BaseTest  - OR properties loaded !!!
+INFO    2022-05-25 13:28:47,188 [main] com.w2a.base.BaseTest  - Launching Chrome !!!
+INFO    2022-05-25 13:29:19,079 [main] com.w2a.base.BaseTest  - Navigated to : https://www.carwale.com/
+INFO    2022-05-25 13:29:38,599 [main] com.w2a.base.BaseTest  - DB Connection established !!!
+INFO    2022-05-25 13:30:07,103 [main] com.w2a.base.BaseTest  - Test Execution completed !!!
+INFO    2022-05-25 13:30:07,112 [main] com.w2a.base.BaseTest  - Test Execution completed !!!
+INFO    2022-05-25 13:30:07,116 [main] com.w2a.base.BaseTest  - Test Execution completed !!!
+INFO    2022-05-25 13:30:07,121 [main] com.w2a.base.BaseTest  - Test Execution completed !!!
+INFO    2022-05-25 13:30:07,125 [main] com.w2a.base.BaseTest  - Test Execution completed !!!
+INFO    2022-05-25 13:30:07,134 [main] com.w2a.base.BaseTest  - Test Execution completed !!!
+INFO    2022-05-25 13:30:07,139 [main] com.w2a.base.BaseTest  - Test Execution completed !!!
+INFO    2022-05-25 13:30:07,146 [main] com.w2a.base.BaseTest  - Test Execution completed !!!
+INFO    2022-05-25 13:30:07,150 [main] com.w2a.base.BaseTest  - Test Execution completed !!!
+INFO    2022-05-25 13:30:07,153 [main] com.w2a.base.BaseTest  - Test Execution completed !!!
+INFO    2022-05-25 13:30:07,165 [main] com.w2a.base.BaseTest  - Test Execution completed !!!
+INFO    2022-05-25 13:30:07,170 [main] com.w2a.base.BaseTest  - Test Execution completed !!!

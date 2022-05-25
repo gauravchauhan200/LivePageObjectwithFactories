@@ -106,6 +106,13 @@ public class FindNewCarTest extends BaseTest
 	home.findNewCar();
 	NewCarPage carPage = new NewCarPage(driver);
 	carPage.gotoBMW();
+	
+<test name="Find New Car Test">
+    <classes>
+      <class name="com.w2a.testcases.FindNewCarTest"/>
+    </classes>
+ </test> <!-- Test -->
+  
 				
 
 */
