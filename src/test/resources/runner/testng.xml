@@ -13,14 +13,13 @@
     	<classes>
     	  <class name="com.w2a.testcases.FindNewCarTest"/>
    		</classes>
- 	</test> <!-- Test -->
- 
-    <test name="Car Name And Price">
-   		<classes>
-      		<class name="com.w2a.testcases.CarNameAndPriceTest"/>
+ 	</test>
+
+  	<test name="Car Name And Price Test">
+    	<classes>
+    	  <class name="com.w2a.testcases.CarNameAndPriceTest"/>
    		</classes>
-  	</test> <!-- Test -->
-  
+ 	</test>
   
   
 </suite> <!-- Suite -->
